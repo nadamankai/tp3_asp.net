@@ -1,0 +1,28 @@
+﻿@Model List<Person> persons
+@{
+    ViewBag.Title = "all";
+}
+    
+
+<div class="row row-cols-1 row-cols-md-5 g-3">
+        @foreach(var p in Model )
+        {
+            <div class="col">
+                <div class="card">
+                    <img src=@p.image class="card-img-top" alt="Person" height="200" width="200">
+                    <div class="card-body">
+                        <h5 style="font-size:16px">@p.first_name @p.last_name  </h5>
+                        <h5 style="font-size:10px">@p.email  </h5>
+                        <h5 style="font-size:11px">@p.country  </h5>
+                    </div>
+                </div>
+            </div>
+        }
+</div>
+           
+              
+
+
+
+              
+

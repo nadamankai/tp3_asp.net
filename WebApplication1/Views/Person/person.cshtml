@@ -1,0 +1,13 @@
+﻿@Model Person p
+@{
+    ViewBag.Title = "person";
+}
+@if (Model == null)
+{
+    <div> personne non trouvée</div>
+
+}
+else
+{
+<div> first_name : @Model.first_name</div>
+}
